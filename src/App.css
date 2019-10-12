@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.app__title{
+    color: white;
+}
+.app__image{
+    
+}
+.app__about-me{
+    color: white;
+}
+
+.app__projects{
+    color: white;
+}
+
+.app__contact-links{
+    color: white;
+}
