@@ -27,17 +27,98 @@
     <title>Mi portfolio</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">Mi Logo</div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil Profesional</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades y Conocimientos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#soft-skills">Soft Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ocio">Ocio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <section id="bienvenida" class="text-center py-5 bg-light">
+        <div class="container">
+            <h1>¡Hola! Soy [Tu Nombre]</h1>
+            <p>Diseñador y desarrollador web</p>
+        </div>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <section id="perfil" class="py-5">
+        <div class="container text-center">
+            <h2>Perfil Profesional</h2>
+            <img src="tu-foto.jpg" alt="Foto de Perfil" class="rounded-circle mb-3">
+            <p>Descripción sobre ti, tus valores y tu misión profesional.</p>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Experiencia</h2>
+            <div class="timeline">
+                <!-- Añadir elementos de la línea de tiempo aquí -->
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Habilidades y Conocimientos</h2>
+            <div class="skills">
+                <!-- Añadir gráficos de barras aquí -->
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Formación</h2>
+            <div class="education">
+                <!-- Añadir certificados y diplomas aquí -->
+            </div>
+        </div>
+    </section>
+
+    <section id="soft-skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Soft Skills</h2>
+            <div class="soft-skills">
+                <!-- Añadir nube de palabras y testimonios aquí -->
+            </div>
+        </div>
+    </section>
+
+    <section id="ocio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Ocio</h2>
+            <div class="hobbies">
+                <!-- Añadir galería de imágenes aquí -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <div class="social-media mb-3">
+                <!-- Añadir iconos de redes sociales aquí -->
+            </div>
+            <form>
+                <label for="contact">Contacto:</label>
+                <input type="text" id="contact" name="contact" class="form-control mb-2" placeholder="Tu mensaje">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
 </html>
