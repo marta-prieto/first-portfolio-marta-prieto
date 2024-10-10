@@ -1,33 +1,28 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+import foto from './linkedin_photo_24.jpeg';
+import constructionPic from './under_construction.jpg'
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Mi portfolio</title>
-  </head>
-  <body>
-    <header class="bg-light py-3">
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
+
+function App() {
+  return (
+    <div className="App">
+    {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Prueba <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header> */}
+      <header class="bg-light py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">Mi Logo</div>
             <nav>
@@ -45,16 +40,18 @@
 
     <section id="bienvenida" class="text-center py-5 bg-light">
         <div class="container">
-            <h1>¡Hola! Soy [Tu Nombre]</h1>
-            <p>Diseñador y desarrollador web</p>
+        <p class="building_alert">¡APP EN CONSTRUCCIÓN!</p>
+        <img src={constructionPic} alt={"Foto web en desarrollo"} class=""/>
+            <h1>¡Hola! Soy Marta</h1>
+            <p>Frontend Web Developer</p>
         </div>
     </section>
 
     <section id="perfil" class="py-5">
         <div class="container text-center">
             <h2>Perfil Profesional</h2>
-            <img src="tu-foto.jpg" alt="Foto de Perfil" class="rounded-circle mb-3">
-            <p>Descripción sobre ti, tus valores y tu misión profesional.</p>
+            <img src={foto} alt={"Foto de Perfil"} class="foto rounded-circle mb-3"/>
+
         </div>
     </section>
 
@@ -62,7 +59,7 @@
         <div class="container">
             <h2 class="text-center">Experiencia</h2>
             <div class="timeline">
-                <!-- Añadir elementos de la línea de tiempo aquí -->
+                {/*  Añadir elementos de la línea de tiempo aquí */}
             </div>
         </div>
     </section>
@@ -71,7 +68,7 @@
         <div class="container">
             <h2 class="text-center">Habilidades y Conocimientos</h2>
             <div class="skills">
-                <!-- Añadir gráficos de barras aquí -->
+            {/*   ejemplos de tecnologías */}
             </div>
         </div>
     </section>
@@ -80,7 +77,7 @@
         <div class="container">
             <h2 class="text-center">Formación</h2>
             <div class="education">
-                <!-- Añadir certificados y diplomas aquí -->
+            {/*   Universidad y cursos */}
             </div>
         </div>
     </section>
@@ -89,7 +86,7 @@
         <div class="container">
             <h2 class="text-center">Soft Skills</h2>
             <div class="soft-skills">
-                <!-- Añadir nube de palabras y testimonios aquí -->
+            {/*   soft skills y aptitudes */}
             </div>
         </div>
     </section>
@@ -98,7 +95,7 @@
         <div class="container">
             <h2 class="text-center">Ocio</h2>
             <div class="hobbies">
-                <!-- Añadir galería de imágenes aquí -->
+            {/*   gustos y ocio */}
             </div>
         </div>
     </section>
@@ -106,19 +103,19 @@
     <footer class="bg-light py-3">
         <div class="container text-center">
             <div class="social-media mb-3">
-                <!-- Añadir iconos de redes sociales aquí -->
+            {/*   redes sociales  */}
             </div>
             <form>
                 <label for="contact">Contacto:</label>
-                <input type="text" id="contact" name="contact" class="form-control mb-2" placeholder="Tu mensaje">
+                <input type="text" id="contact" name="contact" class="form-control mb-2" placeholder="Tu mensaje"/>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
-</body>
-</html>
+    
+    </div>
+  );
+}
+
+export default App;
