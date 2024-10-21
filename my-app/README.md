@@ -5,7 +5,7 @@
 I'm Marta, Frontend Developer 
 
 
-# (App in progress - Potfolio)
+# (App in progress - Portfolio)
 
 ![photo_little_dog_by_pavel-herceg](https://github.com/user-attachments/assets/f90b72b6-5517-4c62-9b4b-049e0ec981ad)
 
