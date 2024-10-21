@@ -7,8 +7,9 @@ I'm Marta, Frontend Developer
 
 # (App in progress - Potfolio)
 
-![Link an image.] ![photo_little_dog_by_pavel-herceg](https://github.com/user-attachments/assets/f90b72b6-5517-4c62-9b4b-049e0ec981ad)
+![photo_little_dog_by_pavel-herceg](https://github.com/user-attachments/assets/f90b72b6-5517-4c62-9b4b-049e0ec981ad)
 
+[photo by pavel_herceg]
 
 
 
